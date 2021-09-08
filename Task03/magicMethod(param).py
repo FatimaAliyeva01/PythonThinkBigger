@@ -39,20 +39,10 @@ A = [1, 2, 3, 4, 5, 6]
 print(A)
 
 #4)obyektdirsə onun properylerini ekrana cap etsin
+def magicMethod3( name, age = 18 ):
+   print ("Name: ", name)
+   print ("Age ", age)
+   return;
 
-class Animal(object):
-    def _init_(self):
-        self.eyes = 2
-        self.name = 'Dog'
-        self.color= 'Spotted'
-        self.legs= 4
-        self.age  = 10
-        self.kids = 0
- 
- 
-animal = Animal()
-animal.tail = 1
- 
-temp = vars(animal)
-for item in temp:
-    print(item, ':', temp[item])
+magicMethod3( age=56, name="Xanim" )
+magicMethod3( name="Fatima" )
